@@ -120,17 +120,49 @@
             </div>
         </div>
     </div>
-    <doiv class="faqsection">
+    <div class="faqsection">
         <div class="maincontainer">
             <div class="minnnheres">
                 <div class="headingbenifits">
                     <h1>Questions</h1>
                 </div>
                 <div class="questionwork">
+                    <button class="accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
+
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                    </div>
+
+                    <button class="accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                    </div>
+
+                    <button class="accordion">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </doiv>
 </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
 </html>

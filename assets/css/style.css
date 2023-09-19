@@ -196,6 +196,57 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .imgboxx:hover .texthovers {
     display: block;
 }
+.accordion {
+    background-color: #A0CE65;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    margin-top: 12px;
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+  
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+}
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0px 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #A0CE65;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+  .minnnheres {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.headingbenifits {
+    padding-bottom: 18px;
+    width: 100%;
+}
+  .questionwork {
+    width: 90%;
+}
+.faqsection {
+    padding: 0 0 50px 0;
+}
 @media only screen and (max-width: 1200px)
 {
     .maincontainer {
@@ -222,6 +273,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     .texthovers {
         top: 90px;
     }
+    .accordion {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 991px)
 {
@@ -243,6 +297,13 @@ h1,h2,h3,h4,h5,h6,p,ul{
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
+    }
+    .minnnheres {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 800px)
@@ -298,6 +359,10 @@ h1,h2,h3,h4,h5,h6,p,ul{
     .oneteam h1{
         text-align: center;
     }
+    .panel p {
+        font-size: 14px;
+        padding: 15px 0;
+    }
 }
 @media only screen and (max-width: 414px)
 {
@@ -317,6 +382,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
         position: relative;
         cursor: pointer;
         padding-bottom: 16px;
+    }
+    .accordion:after {
+        margin-top: -14px;
     }
 }
 @media only screen and (max-width: 360px)
