@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 body{
     margin: 0;
     padding:0;
@@ -79,8 +80,16 @@ h1,h2,h3,h4,h5,h6,p,ul{
     background-color: #918A85;
     color:#FFF9F1;
 }
+.purplebg{
+    background-color: #57203C;
+    color:#D85991;
+}
+.lightgreenbg{
+    background-color: #A0CE65;
+    color: #1F4E3C;
+}
 .supportexits {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 .supportsec {
     display: flex;
@@ -112,8 +121,81 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .oneleftimg img {
     width: 100%;
 }
+.teams {
+    padding-bottom: 100px;
+}
+.onemainteam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.oneteam {
+    margin: 0 10px;
+    padding: 25px 25px;
+    font-family: 'IBM Plex Serif', serif;
+}
+.oneteam h1 {
+    font-weight: 400;
+    font-size: 34px;
+    padding-bottom: 12px;
+    text-align: left;
+    padding-top: 18px;
+}
+.oneteam img {
+    width: 100%;
+}
+.oneteam p {
+    font-size: 20px;
+    padding-bottom: 22px;
+}
 
-
+.mainboximg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.texthovers{
+    background-color: #A0CE65;
+}
+.hoverbenefits {
+    padding-bottom: 100px;
+}
+.imgboxx {
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+}
+.imgboxx img {
+    width: 100%;
+}
+.texthovers {
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 21px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 117px;
+    display: none;
+}
+.texthovers h4 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 100px;
+}
+.texthovers p {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    padding-bottom: 70px;
+}
+.imgboxx:hover .texthovers {
+    display: block;
+}
 @media only screen and (max-width: 1200px)
 {
     .maincontainer {
@@ -137,6 +219,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
         padding-bottom: 18px;
         margin: 0 10px;
     }
+    .texthovers {
+        top: 90px;
+    }
 }
 @media only screen and (max-width: 991px)
 {
@@ -152,6 +237,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
     }
     .headingbenifits {
         text-align: center;
+    }
+    .mainboximg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 }
 @media only screen and (max-width: 800px)
@@ -178,6 +269,35 @@ h1,h2,h3,h4,h5,h6,p,ul{
         text-align: center;
         padding-top: 25px;
     }
+    .oneteam {
+        padding: 25px 18px;
+    }
+    .oneteam h1 {
+        font-size: 27px;
+    }
+    .oneteam p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    .onemainteam {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .oneteam {
+        padding: 25px 18px;
+        width: 50%;
+        margin-bottom: 23px;
+        text-align: center;
+    }
+    .oneteam h1{
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 414px)
 {
@@ -188,5 +308,29 @@ h1,h2,h3,h4,h5,h6,p,ul{
         font-size: 27px;
         width: 86%;
         margin: 0 auto;
+    }
+    .oneteam {
+        width: 75%;
+    }
+    .imgboxx {
+        margin: 0 8px;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 16px;
+    }
+}
+@media only screen and (max-width: 360px)
+{
+    .texthovers p {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    .texthovers h4 {
+        font-size: 16px;
+        font-weight: 300;
+        padding-bottom: 60px;
+    }
+    .texthovers {
+        top: 70px;
     }
 }
